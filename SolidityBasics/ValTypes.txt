@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.8.2 <0.9.0;
+
+contract ValTypes {
+    bool public b = true;
+    uint public u = 123;
+
+    int public i = -123;
+    int public minInt = type(int).min;
+    int public maxInt = type(int).max;
+    
+    address public addr = 0xF17d119eFFA0dCbe24D3fA346860be851150358F;
+    bytes32 public b32 = 0x6565e4388f4c33fb1f4dc448095b2142a06b1bdbb88cb4d13adb1d14950522b7;
+}
