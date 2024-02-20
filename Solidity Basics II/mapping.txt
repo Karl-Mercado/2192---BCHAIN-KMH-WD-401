@@ -1,0 +1,28 @@
+// MERCADO, KARL MATTHEW H. - WD-401
+
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.2 <0.9.0;
+
+contract MappingExample {
+    mapping (address => uint256) public valueMapping;
+
+     function setValue (uint256 _value) public nonZeroValue(_value){
+        require(_value != 0, "Value cannot be zero");
+        valueMapping [msg.sender] = _value;
+    }
+
+      function getValue() public view valueHasBeenSet returns (uint256) {
+        require(valueMapping[msg.sender] != 0, "No value set for sender");
+        return valueMapping [msg.sender];
+    }
+
+    modifier nonZeroValue (uint256 _value){
+        require(_value != 0, "Value cannot be zero");
+        _;
+    }
+
+    modifier valueHasBeenSet() {
+        require(valueMapping[msg.sender] !=0, "No value set for sender");
+        _;
+    }
+}
