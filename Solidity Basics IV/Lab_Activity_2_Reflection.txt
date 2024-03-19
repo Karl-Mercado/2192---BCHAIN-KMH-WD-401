@@ -1,0 +1,2 @@
+In the second activity, there are added features that are exclusive only for the user. For example a function that 
+the owner can only call and use. This activity is a great example of the overall compilation of the discussed topics.

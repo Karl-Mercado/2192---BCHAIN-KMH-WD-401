@@ -1,0 +1,2 @@
+In this activity, there is a function that is only exclusive for the owner. For example the owner can only winthdraw the funds,
+and after the owner withdraws, the remaining balance should be seen.

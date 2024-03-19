@@ -1,0 +1,2 @@
+My overall reflection about the fallback and self destruct activity is that, they are quite similar in terms of deploying the code. 
+You should add a value first in order to see the overall balance in ETH.
